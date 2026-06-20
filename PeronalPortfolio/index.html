@@ -1,762 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Akshat Santhana Gopalan | Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akshat Santhana Gopalan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Dancing+Script:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <span class="logo">Akshat Santhana Gopalan</span>
-
-        <ul class="nav-links">
-            <li><a href="#education">Education</a></li>
-            <li><a href="#research-internships">Research & Internships</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#honors">Honors & Awards</a></li>
-            <!-- <li><a href="#competitions">Competitions</a></li> -->
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#associations">Volunteering & Associations</a></li>
-            <li><a href="#citations">Citations</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#music">Music</a></li>
-            <li><a href="#clubs">Clubs & Leadership</a></li>
-        </ul>
-
-        <button id="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+  <aside class="sidebar">
+    <nav>
+      <ul>
+        <li><a href="#" data-page="home" class="nav-link active">Home</a></li>
+        <li><a href="#" data-page="current" class="nav-link">Current</a></li>
+        <li><a href="#" data-page="work" class="nav-link">Work</a></li>
+        <li><a href="#" data-page="publications" class="nav-link">Publications</a></li>
+        <li><a href="#" data-page="recognition" class="nav-link">Recognition</a></li>
+        <li><a href="#" data-page="thoughts" class="nav-link">Thoughts</a></li>
+      </ul>
     </nav>
+  </aside>
 
+  <div class="right">
 
-    <!-- Header -->
-    <header class="header">
-        <img src="assets/akshat.jpeg" alt="Profile Photo" class="profile-pic">
-        <h1>Akshat Santhana Gopalan</h1>
-        <p class="subtitle">High School Student | Passionate about Computational Linguistics, Machine Learning & Deep
-            Learning</p>
-    </header>
+    <div class="pages">
 
-    <!-- Main Content -->
-    <main class="container">
+      <!-- HOME -->
+      <div id="page-home" class="page active">
+        <div class="prose">
+          <p>
+            Incoming DS freshman at <strong>UC Berkeley</strong>, Fall 2026.
+          </p>
+          <p>Co-founder of Segmentum AI. Spun out from research at Princeton Physics with faculty. Reinventing few-shot segmentation.</p> 
+          <p>
+            Research across deep generative models, info-theoretic learning, compbio. Currently into rl and computer-use agents. </p>
+            Prev. Researcher @ Princeton Physics, NYU, MILA,
+            Stanford's AIMI Center, NJIT, IIT Madras, and funded by US Air Force Research Laboratory.
+          </p>
+          <p>
+            A few results I'm proud of: papers at AAAI, ICLR, ACS, CI CRC</a>,
+            the <a href="https://www.itu.int/hub/publication/t-ai4g-ai4good-2025-1/" target="_blank" rel="noopener">UN AI for Good Global Summit</a>;
+            Regeneron Science Talent Search Scholar.
+          </p>
+          <p>
+            I've been playing Carnatic flute for twelve years 🪈
+          </p>
+        </div>
+      </div>
 
-        <section id="education">
-            <h2>Education</h2>
-            <ul>
-                <li><strong>John P. Stevens High School</strong>, Edison NJ — Class of 2026</li>
-            </ul>
-        </section>
+      <!-- CURRENT -->
+      <div id="page-current" class="page">
+        <div class="prose">
+          <p class="page-label">As of June 2026</p>
 
-        <section id="research-internships">
-            <h2>Research & Internships</h2>
-            <div class="item">
-                <img src="assets/princeton.jpeg" alt="Organization Logo">
-                <div class="item-content">
-                    <div class="item-title-row">
-                        <h3>Linguistics & Biophysics Researcher</h3>
-                        <span class="duration">
-                            Summer Internship: Jul – Aug 2025; LLP Plus: Sep 2025 - Till date
-                        </span>
-                    </div>
-                    <p>Princeton University - Laboratory Learning Program (LLP)</p>
+          <p>
+            <strong>Princeton Physics Lab</strong> — novel few-shot tumor segmentation model work under Dr. Jason Puchalla.
+            Co-founding a startup around the underlying IP. Research filed for IP rights.
+          </p>
+          <p>
+            <strong>NYU &amp; MILA</strong> — building normalizing flow datasets with Prof. Ravid Shwartz-Ziv.
+            arXiv <a href="https://arxiv.org/abs/2602.00315" target="_blank" rel="noopener">preprint</a> out.
+          </p>
+          <p>
+            <strong>NJIT SCIIS Lab</strong> — reinforcement learning for robotic navigation and semantic segmentation.
+            Paper accepted at the ASCE Construction Research Congress.
+          </p>
+          <p>
+            <strong>Stevens &thinsp;/&thinsp; AFRL</strong> — year two of the Air Force Research Lab's
+            National SDR Challenge. Line-of-Sight MIMO and spatial multiplexing.
+          </p>
+          <p>
+            Starting at Berkeley in August.
+          </p>
+        </div>
+      </div>
 
-                    <p class="muted">
-                        Interned at the <a href="https://phy.princeton.edu" target="_blank">Department of Physics</a>
-                        directly under <a href="https://phy.princeton.edu/people/jason-puchalla" target="_blank">Dr.
-                            Jason Puchalla</a>.
-                        Worked at the Physics lab in-person - 40 hours/week for 7 weeks.
-                        Built a novel tumor segmentation algorithm.
-                        Featured twice by Princeton Science Outreach.
-                        Invited by Physics department faculty to exclusive LLPplus Program (year long).
-                        Co-founding new Princeton-backed startup based on the research work.
-                        Research work has been filed for Intellectual Property (IP) rights.
-                    </p>
-
-                    <!-- Reference link goes INSIDE content div -->
-                    <div class="reference-link">
-                        <a href="https://sites.google.com/view/puchallalab/home#h.2eba4f340472e04d_12" target="_blank">
-                            Dr. Puchalla Lab, Princeton →
-                        </a>
-                    </div>
-                </div>
+      <!-- WORK -->
+      <div id="page-work" class="page">
+        <div class="prose">
+          <div class="entry">
+            <div class="entry-head">
+              <span class="entry-place">Princeton University</span>
+              <span class="entry-date">Jul 2025 – Present</span>
             </div>
-            <div class="item">
-                <img src="assets/nyu.png" alt="Organization Logo">
-                <div class="item-content">
-                    <div class="item-title-row">
-                        <h3>Linguistics & Deep Learning Researcher</h3>
-                        <span class="duration">
-                            Sep 2025 – Till date
-                        </span>
-                    </div>
-                    <p>New York University & MILA - Quebec Artificial Intelligence Institute</p>
+            <p class="entry-role">Linguistics &amp; Biophysics Researcher</p>
+            <p class="entry-sub">Laboratory Learning Program · Dept. of Physics · Dr. Jason Puchalla</p>
+          </div>
 
-                    <p class="muted">
-                        Building normalizing flow datasets with <a href="https://www.ravid-shwartz-ziv.com"
-                            target="_blank">Prof. Ravid Ziv</a>.
-                        Associated to <a href="https://www.nyu.edu" target="_blank">New York University</a> & <a
-                            href="https://mila.quebec/en" target="_blank">MILA - Quebec Artificial Intelligence
-                            Institute</a>.
-                        Research work involves Info-theoretic deep learning.
-                    </p>
-                    <!-- Reference link goes INSIDE content div -->
-                    <div class="reference-link">
-                        <a href="https://arxiv.org/abs/2602.00315" target="_blank">
-                            Research Paper →
-                        </a>
-                    </div>
-                </div>
-            </div>            
-            <div class="item">
-                <img src="assets/stanford.png" alt="Organization Logo">
-                <div class="item-content">
-                    <div class="item-title-row">
-                        <h3>Summer AI Research Intern</h3>
-                        <span class="duration">
-                            Jun 2025
-                        </span>
-                    </div>
-                    <p>Stanford University - Artificial Intelligence in Medicine & Imaging (AIMI)</p>
+          <div class="entry">
+            <div class="entry-head">
+              <span class="entry-place">NYU &amp; MILA</span>
+              <span class="entry-date">Sep 2025 – Present</span>
+            </div>
+            <p class="entry-role">Deep Learning Researcher</p>
+            <p class="entry-sub">New York Institute · Prof. Ravid Shwartz-Ziv · Info-theoretic deep learning</p>
+          </div>
 
-                    <p class="muted">
-                        One of 50 of 2000+ applicants chosen for internship.
-                        Interned as part of the Stanford Artificial Intelligence in Medicine & Imaging
-                        (AIMI)
-                        Research Center.
-                        Developed new pneumonia segmentation algorithm and presented to Stanford
-                        researchers and faculty.
-                    </p>
-                </div>
+          <div class="entry">
+            <div class="entry-head">
+              <span class="entry-place">Stanford University</span>
+              <span class="entry-date">Jun 2025</span>
             </div>
-            <div class="item">
-                <img src="assets/njit.png" alt="Organization Logo">
-                <div class="item-content">
-                    <div class="item-title-row">
-                        <h3>Research Intern / Reinforcement Learning</h3>
-                        <span class="duration">
-                            Oct 2024 - Till date
-                        </span>
-                    </div>
-                    <p>New Jersey Institute of Technology (NJIT) – SCIIS Laboratory</p>
+            <p class="entry-role">AI Research Intern</p>
+            <p class="entry-sub">Artificial Intelligence in Medicine &amp; Imaging (AIMI) · Selected from 2,000+ applicants</p>
+          </div>
 
-                    <p class="muted">
-                        Working with Asst. Prof. <a
-                            href="https://tec.illinoisstate.edu/faculty-staff/profile/?ulid=xhu1238" target="_blank">Xi
-                            Hu</a> and Asst. Prof. <a href="https://people.njit.edu/profile/rh427" target="_blank">Rayan
-                            Assaad</a> at
-                        the Smart
-                        Construction and Intelligent Infrastructure Systems (SCIIS) Lab at NJIT.
-                        Developed novel reinforcement learning model for robotic navigation and semantic
-                        segmentation.
-                        Research paper has been accepted by <a href="https://cisummit-crc.asce.org" target="_blank">The
-                            Construction Research Congress</a>.
-                    </p>
+          <div class="entry">
+            <div class="entry-head">
+              <span class="entry-place">NJIT</span>
+              <span class="entry-date">Oct 2024 – Jan 2026</span>
+            </div>
+            <p class="entry-role">Reinforcement Learning Researcher</p>
+            <p class="entry-sub">SCIIS Lab · Prof. Xi Hu &amp; Prof. Rayan Assaad</p>
+          </div>
 
-                    <!-- Reference link goes INSIDE content div -->
-                    <div class="reference-link">
-                        <a href="https://sciis.njit.edu/team.html" target="_blank">
-                            NJIT SCIIS Lab →
-                        </a>
-                    </div>
-                </div>
+          <div class="entry">
+            <div class="entry-head">
+              <span class="entry-place">Stevens Institute of Technology</span>
+              <span class="entry-date">Sep 2024 – Present</span>
             </div>
+            <p class="entry-role">AI &amp; Wireless Communications Researcher</p>
+            <p class="entry-sub">AFRL National SDR Challenge · Signal Seekers Team Captain · $17k USRP grant (×2)</p>
+          </div>
 
-            <div class="item">
-                <img src="assets/stevens.png" alt="Organization Logo">
+          <div class="entry">
+            <div class="entry-head">
+              <span class="entry-place">IIT Madras</span>
+              <span class="entry-date">Jun – Aug 2024</span>
+            </div>
+            <p class="entry-role">Bioinformatics Research Intern</p>
+            <p class="entry-sub">Dept. of Biotechnology &amp; Cancer Institute Chennai · De novo antibody design</p>
+          </div>
 
-                <div class="item-content">
-                    <div class="item-title-row">
-                        <h3>Research Intern / AI Research</h3>
-                        <span class="duration">
-                            Sep 2024 - Till date
-                        </span>
-                    </div>
-                    <p>Stevens Institute of Technology, New Jersey</p>
+          <div class="entry">
+            <div class="entry-head">
+              <span class="entry-place">IIT Madras · Robert Bosch Center for DS and AI</span>
+              <span class="entry-date">Jul – Sep 2023</span>
+            </div>
+            <p class="entry-role">ML Research Intern</p>
+            <p class="entry-sub">Robert Bosch Center for Data Science &amp; AI · 35 DL models for yeast growth prediction</p>
+          </div>
+        </div>
+      </div>
 
-                    <p class="muted">
-                        Working on a research project involving Wireless Communication using Line-of-Sight
-                        MIMO.
-                        Optimizing communication techniques involved in spatial multiplexing.
-                        Formed Stevens “Signal Seekers” Team working closely with professors and research
-                        students.
-                    </p>
-                </div>
-            </div>
-            <div class="item">
-                <img src="assets/iitm.png" alt="Organization Logo">
+      <!-- PUBLICATIONS -->
+      <div id="page-publications" class="page">
+        <div class="prose">
 
-                <div class="item-content">
-                    <div class="item-title-row">
-                        <h3>Bio-informatics Research Intern</h3>
-                        <span class="duration">
-                            Jun - Aug 2024
-                        </span>
-                    </div>
+          <div class="pub">
+            <p class="pub-title">Beyond the Loss Curve: Scaling Laws, Active Learning, and the Limits of Learning from Exact Posteriors</p>
+            <p class="pub-meta">ICLR · 2026 &ensp;<a href="https://arxiv.org/abs/2602.00315" target="_blank" rel="noopener">↗</a></p>
+          </div>
 
-                    <p>Indian Institute of Technology - Madras, INDIA</p>
+          <div class="pub">
+            <p class="pub-title">Generative Flow Networks for Lead Optimization in Drug Discovery</p>
+            <p class="pub-meta">AAAI &ensp;<a href="https://ojs.aaai.org/index.php/AAAI/article/view/35297" target="_blank" rel="noopener">↗</a></p>
+          </div>
 
-                    <p class="muted">
-                        Collaboration between <a
-                            href="https://www.iitm.ac.in/academics/departments/department-of-biotechnology"
-                            target="_blank">IIT-M Biotechnology Department</a> & Cancer Institute Chennai,
-                        INDIA.
-                        Focusing on development of a Deep Learning based framework for De-Novo Generation of
-                        Antibodies targeting Antigens for Cancer Therapy.
-                    </p>
+          <div class="pub">
+            <p class="pub-title">An Inclusive Deep-Generative Framework to Overcome Racial &amp; Regional Barriers in Skin Disease Diagnosis</p>
+            <p class="pub-meta">UN AI for Good Global Summit · Geneva · 2025 &ensp;<a href="https://www.itu.int/hub/publication/t-ai4g-ai4good-2025-1/" target="_blank" rel="noopener">↗</a></p>
+          </div>
 
-                    <!-- Reference link goes INSIDE content div -->
-                    <div class="reference-link">
-                        <a href="https://www.iitm.ac.in/academics/departments/department-of-biotechnology"
-                            target="_blank">
-                            Dept. of Biotechnology, IIT-M →
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="assets/iitm.png" alt="Organization Logo">
+          <div class="pub">
+            <p class="pub-title">Deep generative flow network driven multi-objective molecular design for accelerating drug discovery</p>
+            <p class="pub-meta">American Chemical Society (ACS) · 2025 &ensp;<a href="https://acs.digitellinc.com/b/sp/akshat-santhana-gopalan-431077" target="_blank" rel="noopener">↗</a></p>
+          </div>
 
-                <div class="item-content">
-                    <div class="item-title-row">
-                        <h3>ML Research Intern</h3>
-                        <span class="duration">
-                            Jul - Sep 2023
-                        </span>
-                    </div>
-                    <p>Robert Bosch Center for Data Science & AI, Indian Institute of Technology -
-                        Madras, INDIA</p>
+          <div class="pub">
+            <p class="pub-title">Deep Generative De Novo Design of High-Affinity Antibodies for Therapeutic Targeting of Disease-Associated Antigens</p>
+            <p class="pub-meta">MIT &amp; IEEE Undergraduate Research Technology Conference · 2025 &ensp;<span class="pub-status">in publication</span></p>
+          </div>
 
-                    <p class="muted">
-                        Research focused on the genetic dissection of complex traits, employing advanced
-                        techniques in Machine Learning and Data Science.
-                        Predicting the growth of yeast in various conditions based on the presence of
-                        mutations (single-nucleotide-variations), ontotypes, and genetic data.
-                        Worked with diverse datasets sourced from a multitude of wet-lab experiments and
-                        published materials.
-                        Developed and fine-tunined 35 different Deep Learning models aimed at accurately
-                        predicting the growth of yeast.
-                    </p>
+          <div class="pub">
+            <p class="pub-title">A Framework of RGB-Thermal Sensor Fusion with Zero-shot and Prompt-aware Deep Learning for Enhanced Real-time Thermal Anomaly Detection</p>
+            <p class="pub-meta">ASCE Construction Research Congress &ensp;<span class="pub-status">forthcoming</span></p>
+          </div>
 
-                    <!-- Reference link goes INSIDE content div -->
-                    <div class="reference-link">
-                        <a href="https://www.iitm.ac.in/research/institute-research-centres/robert-bosch-centre-for-data-science-and-artificial-intelligence"
-                            target="_blank">
-                            Robert Bosch Center for Data Science & AI, IIT-M →
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
+          <div class="pub">
+            <p class="pub-title">ScriptGAN: A Therapeutic Tool for Preserving and Replicating Handwriting Using Generative Adversarial Networks in Neurodegenerative and Learning Disorders</p>
+            <p class="pub-meta">MIT &amp; IEEE Undergraduate Research Technology Conference · 2024 &ensp;<span class="pub-status">poster</span></p>
+          </div>
 
+        </div>
+      </div>
 
-        <section id="publications">
-            <h2>Publications</h2>
-            <div class="item">
-                <img src="assets/arXiv.png" alt="Publisher Logo">
-                <div>
-                    <h3>Beyond the Loss Curve: Scaling Laws, Active Learning, and the Limits of Learning from Exact Posteriors</h3>
-                    <p>arXiv, 2026</p>
-                    <!-- Reference link goes INSIDE content div -->
-                    <div class="reference-link">
-                        <a href="https://arxiv.org/abs/2602.00315" target="_blank">
-                            Pre-print →
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="assets/mit.png" alt="Publisher Logo">
-                <div>
-                    <h3>Deep Generative De Novo Design of High-Affinity Antibodies for Therapeutic Targeting of
-                        Disease-Associated Antigens</h3>
-                    <p>MIT & IEEE Undergraduate Research Techonology Conference, 2025</p>
-                    <!-- Reference link goes INSIDE content div -->
-                    <div class="reference-link">
-                        <a>
-                            (Research paper accepted and in publication)
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="assets/mit.png" alt="Publisher Logo">
-                <div>
-                    <h3>ScriptGAN: A Therapeutic Tool for Preserving and Replicating Handwriting Using Generative
-                        Adversarial Networks in Neurodegenerative and Learning Disorders</h3>
-                    <p>MIT & IEEE Undergraduate Research Techonology Conference, 2024</p>
-                    <!-- Reference link goes INSIDE content div -->
-                    <div class="reference-link">
-                        <a>
-                            (Poster presentation at MIT)
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="assets/acs.svg" alt="Publisher Logo">
-                <div>
-                    <h3>Deep generative flow network driven multi-objective molecular design for accelerating drug
-                        discovery</h3>
-                    <p>American Chemical Society (ACS), 2025</p>
-                    <!-- Reference link goes INSIDE content div -->
-                    <div class="reference-link">
-                        <a href="https://acs.digitellinc.com/b/sp/akshat-santhana-gopalan-431077" target="_blank">
-                            Research Paper →
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="assets/aiforgood.jpeg" alt="Publisher Logo">
-                <div>
-                    <h3>An Inclusive Deep-Generative Framework to Overcome Racial & Regional Barriers in Skin Disease
-                        Diagnosis</h3>
-                    <p>United Nations AI for Good Global Summit 2025, Geneva</p>
-                    <!-- Reference link goes INSIDE content div -->
-                    <div class="reference-link">
-                        <a href="https://www.itu.int/hub/publication/t-ai4g-ai4good-2025-1/" target="_blank">
-                            Research Paper →
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="assets/aaai.png" alt="Publisher Logo">
-                <div>
-                    <h3>Generative Flow Networks for Lead Optimization in Drug Discovery</h3>
-                    <p>Association for the Advancement of Artificial Intelligence (AAAI)</p>
-                    <!-- Reference link goes INSIDE content div -->
-                    <div class="reference-link">
-                        <a href="https://ojs.aaai.org/index.php/AAAI/article/view/35297" target="_blank">
-                            Research Paper →
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="assets/crc.png" alt="Publisher Logo">
-                <div>
-                    <h3>A Framework of RGB-Thermal Sensor Fusion with Zero-shot and Prompt-aware Deep Learning for
-                        Enhanced and Real-time Thermal Anomaly Detection in Buildings</h3>
-                    <p>American Society of Civil Engineers - Construction Research Congress</p>
-                    <!-- Reference link goes INSIDE content div -->
-                    <div class="reference-link">
-                        <a>
-                            (Research Paper to be published)
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="assets/bhn.jpeg" alt="Publisher Logo">
-                <div>
-                    <h3>Enhancing Therapeutic Conversations with Sentiment Analysis in Natural Language Processing</h3>
-                    <p>Behavioral Health News</p>
-                    <!-- Reference link goes INSIDE content div -->
-                    <div class="reference-link">
-                        <a href="https://behavioralhealthnews.org/enhancing-therapeutic-conversations-with-sentiment-analysis-in-natural-language-processing/"
-                            target="_blank">
-                            Publication →
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <!-- RECOGNITION -->
+      <div id="page-recognition" class="page">
+        <div class="prose">
 
-        <section id="honors">
-            <h2>Honors & Awards</h2>
-            <div class="item">
-                <img src="assets/regeneron.png" alt="Competition Logo">
-                <div>
-                    <h3>Regeneron Science Talent Search (STS) Scholar, 2026</h3>
-                    <p class="muted">Top 300 Scholar in the <a href="https://www.societyforscience.org/regeneron-sts/"
-                            target="_blank">Regeneron Science
-                            Talent Search,</a> nation’s most prestigious science and mathematics research competition
-                        for high school seniors. This honor includes a $2,000 award to both the scholar and their
-                        school, reflecting the selectivity and national significance of the achievement.
-                    </p>
-                    <!-- Reference link goes INSIDE content div -->
-                    <div class="reference-link">
-                        <a href="https://sspcdn.blob.core.windows.net/files/Documents/SEP/STS/2026/Program-Books/Scholar.pdf"
-                            target="_blank">
-                            Regeneron Scholar Book →
-                        </a>
-                    </div>
-                </div>
+          <div class="award">
+            <span class="award-year">2026</span>
+            <div>
+              <p class="award-name">Regeneron Science Talent Search — Scholar</p>
+              <p class="award-sub">Top 300 nationally. $2,000 scholar award. Nation's most prestigious high school science competition. <a href="https://sspcdn.blob.core.windows.net/files/Documents/SEP/STS/2026/Program-Books/Scholar.pdf" target="_blank" rel="noopener">↗</a></p>
             </div>
-            <div class="item">
-                <img src="assets/afrl.jpeg" alt="Competition Logo">
-                <div>
-                    <h3>Air Force Research Laboratory (AFRL) - National Software Defined Radio (SDR) Challenge, 2024 &
-                        2025</h3>
-                    <p class="muted">First High School student selected by AFRL for national research challenge.
-                        Captain for the research work at <a href="https://www.stevens.edu" target="_blank">Stevens
-                            Institute of Technology</a> on wireless communication.
-                        Formed & Lead Stevens “Signal Seekers” Team working closely with professors and research
-                        students.
-                        Selected by AFRL consecutively for the last two years (2024 & 2025).
-                        Project was shortlisted by AFRL for the <a
-                            href="https://wbi-innovates.zohobackstage.com/afrlsdr" target="_blank">National Software
-                            Defined Radio (SDR) Challenge</a>.
-                        AFRL sponsored total of $17,000 grant (2x) of USRP Hardware to implement the projects.
-                        Worked on a research project involving Wireless Communication using Line-of-Sight MIMO.
-                        Optimizing communication techniques involved in spatial multiplexing.</p>
-                </div>
-            </div>
-            <div class="item">
-                <img src="assets/mercer.jpeg" alt="Competition Logo">
-                <div>
-                    <h3>Mercer Science & Engineering Fair @ Princeton University, 2025</h3>
-                    <p class="muted">
-                        Won 2nd place in the Mercer Science & Engineering Fair hosted at Princeton’s CS Dept.
-                        Presented research work & poster in the competition; discussed the research topic with the
-                        panelists.
-                        Topic: Deep Generative Do Novo Design of High-Affinity Antibodies Targeting Ovarian Cancel
-                        Antigens: Adipsin and IGFBP2.
-                    </p>
-                </div>
-            </div>
-            <div class="item">
-                <img src="assets/nasa.svg" alt="Competition Logo">
-                <div>
-                    <h3>NASA International Human Exploration Rover Challenge, 2024</h3>
-                    <p class="muted">
-                        My team "Team Hercules" represented New Jersey at NASA’s 30th International Human Exploration
-                        Rover Challenge at the United States Space & Rocket Center (Huntsville, AL).
-                        Team was placed Top 10 Internationally in the high school division.
-                    </p>
-                    <!-- Reference link goes INSIDE content div -->
-                    <div class="reference-link">
-                        <a href="https://www.tapinto.net/towns/new-brunswick/milestones/john-p-stevens-high-school-s-team-hercules-places-top-10-at-2024-nasa-rover-challenge-4"
-                            target="_blank">
-                            News →
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="assets/waicy.png" alt="Competition Logo">
-                <div>
-                    <h3>World Artificial Intelligence Competition for Youth (WAICY), 2024</h3>
-                    <p class="muted">
-                        Built LifeLineAI – AI Smart Watch Heart Attack Detector and short listed as international
-                        finalist.
-                        Developed life saving AI Model and integrated into Smart Watch to predict and warn users of
-                        potential Heart Attack.
-                        Tracks and analyses Myocardial Trends in EKG signals to predict cardiovascular conditions CNN &
-                        CoreML.
-                    </p>
-                </div>
-            </div>
-            <div class="item">
-                <img src="assets/nasa.svg" alt="Competition Logo">
-                <div>
-                    <h3>NASA National App Development Challenge, 2024</h3>
-                    <p class="muted">
-                        Founded and captained my school’s NASA Competition Team.
-                        Team was shortlisted as National Finalist for the challenge.
-                        Developed application visualizing the Artemis II mission’s real-time flight path and
-                        communication links with Earth.
-                    </p>
-                </div>
-            </div>
-            <div class="item">
-                <img src="assets/congress.jpeg" alt="Competition Logo">
-                <div>
-                    <h3>Congressional App Challenge, 2023</h3>
-                    <p class="muted">
-                        Built the mobile app BeyondWords - AI Reading Companion for Dyslexic Individuals.
-                        App uses AI to tackle reading difficulties faced by individuals with Dyslexia.
-                        The app won 2nd place in the “Congressional App Challenge – 2023”.
-                        Received recognition from Congressman Frank Pallone Jr.
-                    </p>
-                    <!-- Reference link goes INSIDE content div -->
-                    <div class="reference-link">
-                        <a href="https://pallone.house.gov/media/press-releases/pallone-recognizes-outstanding-high-school-students-spring-awards-ceremony-1"
-                            target="_blank">
-                            Congressman Frank Pallone, Jr. (NJ-06) →
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="assets/acsl.png" alt="Competition Logo">
-                <div>
-                    <h3>American Computer Science League (ACSL), 2022-2023</h3>
-                    <p class="muted">
-                        Was a high scorer in the 4 season long series of the ACSL competition for the intermediate
-                        division.
-                        National Finalist and invited to the All-Stars Competition.
-                    </p>
-                </div>
-            </div>
-        </section>
+          </div>
 
-        <section id="projects">
-            <h2>Projects for Social Cause</h2>
-                        <div class="item">
-                <div>
-                    <h3>The EquiDerm Project - AI for Social Good · Global Health Equity Initiative</h3>
-                    <p class="muted">
-                        The EquiDerm project is
-                        aligned with the <a href="https://www.un.org/sustainabledevelopment/" target="_blank">UN
-                            Sustainable Development Goals (SDGs)</a>, particularly <a
-                            href="https://www.un.org/sustainabledevelopment/health/" target="_blank">SDG 3 (Good Health
-                            and
-                            Well-Being)</a> and <a href="https://www.un.org/sustainabledevelopment/inequality/"
-                            target="_blank">SDG 10 (Reduced Inequalities)</a>.
-                        The EquiDerm project is based on the paper published/recognized by the <a
-                            href="https://aiforgood.itu.int" target="_blank">UN's AI for Good
-                            Global Summit</a> and <a href="https://www.itu.int/en/about/Pages/default.aspx"
-                            target="_blank">International Telecommunications Union (ITU)</a>, showcasing its potential
-                        to advance
-                        responsible and inclusive AI in healthcare. EquiDerm emphasizes ethical AI development,
-                        transparent evaluation, and real-world social impact, with a focus on bridging healthcare access
-                        gaps through data-driven and human-centered innovation.
-                    </p>
-                    <!-- Reference link goes INSIDE content div -->
-                    <div class="reference-link">
-                        <a href="https://theequidermproject.org" target="_blank">
-                            The EquiDerm Project →
-                        </a>
-                    </div>
-                </div>
+          <div class="award">
+            <span class="award-year">2026</span>
+            <div>
+              <p class="award-name">American Association for Cancer Research Special Award</p>
+              <p class="award-sub">Awarded for my research on automated generative antibody discovery.</p>
             </div>
-            <div class="item">
-                <div>
-                    <h3>Small Actions - Supporting United Nation's Sustainable Development Goals</h3>
-                    <p class="muted">
-                        Founded <a href="https://smallactions.org" target="_blank">smallactions.org</a> website to
-                        promote the Sustainable Development Goals (SDG) of the United Nations and AI for Good.
-                        The smallactions.org initiative exemplifies the application of AI for Good by creating tangible
-                        links between everyday actions and the UN’s Sustainable Development Goals (SDGs).
-                        Website encourages individuals to make a significant impact through simple, everyday actions
-                        aligned with SDGs.
-                        Published many articles that translate complex global goals into understandable content,
-                        motivating informed actions from individuals.
-                    </p>
-                    <!-- Reference link goes INSIDE content div -->
-                    <div class="reference-link">
-                        <a href="https://smallactions.org" target="_blank">
-                            smallactions.org →
-                        </a>
-                    </div>
-                </div>
-            </div>
-            </div>
-            <div class="item">
-                <div>
-                    <h3>Diagnose Mpox with just a picture</h3>
-                    <p class="muted">
-                        Built iOS mobile app to diagnose Mpox with the image of skin lesions.
-                        Solves Racial Bias in Skin Care through Generative image synthesis - diagnosis accuracy for
-                        underrepresented races.
-                        Addresses geographical bias, running locally on device without internet - tinyML & Deep Learning
-                        Neural Networks.
-                    </p>
-                    <!-- Reference link goes INSIDE content div -->
-                    <div class="reference-link">
-                        <a href="https://github.com/AkshatSG/EquiDermAI" target="_blank">
-                            github.com →
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div>
-                    <h3>Melanoma Skin Cancer Classification with Inception-v3</h3>
-                    <p class="muted">
-                        Created a deep learning model partly using the Inception-v3 neural network for Melanoma
-                        classification.
-                        Accurately predicted more than 90% of real-world test data of Melanoma Skin Cancer Imaging –
-                        used Inception-v3.
-                    </p>
-                    <!-- Reference link goes INSIDE content div -->
-                    <div class="reference-link">
-                        <a href="https://github.com/AkshatSG/Melanoma-Skin-Cancer-Classification-Using-Tensorflow-ConvNets-Inception-v3"
-                            target="_blank">
-                            github.com →
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
+          </div>
 
-        <section id="associations">
-            <h2>Volunteering & Associations</h2>
-            <div class="item">
-                <img src="assets/asat.jpeg" alt="Organization Logo">
-
-                <div>
-                    <h3>Extern</h3>
-                    <p>Association for Science in Autism Treatment (ASAT)</p>
-
-                    <p class="muted">
-                        As an extern, focussed on integrating AI into international dissemination of Autism content.
-                        Published research articles; supported global dissemination of evidence-based autism resources
-                        to underserved regions.
-                        Helped expand ASAT's impact.
-                    </p>
-
-                    <!-- Reference link goes INSIDE content div -->
-                    <div class="reference-link">
-                        <a href="https://asatonline.org/" target="_blank">
-                            Association for Science in Autism Treatment (ASAT) →
-                        </a>
-                    </div>
-                </div>
+          <div class="award">
+            <span class="award-year">2026</span>
+            <div>
+              <p class="award-name">Regeneron Science Talent Search — Scholar</p>
+              <p class="award-sub">Top 300 nationally. $2,000 scholar award. Nation's most prestigious high school science competition. <a href="https://sspcdn.blob.core.windows.net/files/Documents/SEP/STS/2026/Program-Books/Scholar.pdf" target="_blank" rel="noopener">↗</a></p>
             </div>
-            <div class="item">
-                <img src="assets/inns.png" alt="Organization Logo">
+          </div>
 
-                <div>
-                    <h3>INNS Enthusiast</h3>
-                    <p>International Neural Network Society (INNS)</p>
-
-                    <p class="muted">
-                        First High School Student to be accepted as a member of INNS.
-                        Persuaded the INNS leadership team to establish membership for qualified High School Students
-                        that helped introduce “Enthusiast” membership category.
-                    </p>
-
-                    <!-- Reference link goes INSIDE content div -->
-                    <div class="reference-link">
-                        <a href="https://www.inns.org" target="_blank">
-                            International Neural Network Society (INNS) →
-                        </a>
-                    </div>
-                </div>
+          <div class="award">
+            <span class="award-year">2024–25</span>
+            <div>
+              <p class="award-name">AFRL National SDR Challenge - First HS Student Funded</p>
+              <p class="award-sub">First and only high school student selected by the Air Force Research Laboratory. Led Stevens "Signal Seekers." $17,000 USRP hardware grant (×2). Selected both years.</p>
             </div>
-            <div class="item">
-                <img src="assets/nhs.jpeg" alt="Organization Logo">
+          </div>
 
-                <div>
-                    <h3>Member</h3>
-                    <p>National Honor Society (NHS)</p>
+          <div class="award">
+            <span class="award-year">2025</span>
+            <div>
+              <p class="award-name">Mercer Science &amp; Engineering Fair @ Princeton — 2nd Place</p>
+              <p class="award-sub">Antibody design research presented at Princeton's CS Department.</p>
+            </div>
+          </div>
 
-                    <p class="muted">
-                        Inducted member of National Honor Socity since 2023.
-                    </p>
+          <div class="award">
+            <span class="award-year">2024</span>
+            <div>
+              <p class="award-name">NASA Human Exploration Rover Challenge — Top 10 Globally</p>
+              <p class="award-sub">Team Hercules represented New Jersey at the US Space &amp; Rocket Center, Huntsville, AL. <a href="https://www.tapinto.net/towns/new-brunswick/milestones/john-p-stevens-high-school-s-team-hercules-places-top-10-at-2024-nasa-rover-challenge-4" target="_blank" rel="noopener">↗</a></p>
+            </div>
+          </div>
 
-                    <!-- Reference link goes INSIDE content div -->
-                    <div class="reference-link">
-                        <a href="https://www.nationalhonorsociety.org" target="_blank">
-                            National Honor Society (NHS) →
-                        </a>
-                    </div>
-                </div>
+          <div class="award">
+            <span class="award-year">2024</span>
+            <div>
+              <p class="award-name">World AI Competition for Youth (WAICY) — International Finalist</p>
+              <p class="award-sub">LifeLineAI: smartwatch for real-time heart attack prediction via myocardial EKG analysis.</p>
             </div>
-        </section>
-        <section id="citations">
-            <h2>Citations & Shoutouts</h2>
-            <ul class="bulleted">
-                <li>Google Scholar
-                    <ul>
-                        <li>
-                            <a href="https://scholar.google.com/citations?user=a9Gvs_wAAAAJ&hl=en" target="_blank">
-                                Generative Flow Networks for Lead Optimization in Drug Design (Student Abstract)
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://scholar.google.com/citations?user=a9Gvs_wAAAAJ&hl=en" target="_blank">
-                                Beyond the Loss Curve: Scaling Laws, Active Learning, and the Limits of Learning from Exact Posteriors
-                            </a>
-                        </li>
-                    </ul>
-                </li>           
-                <li>School of Computing and Information Systems, Singapore Management University, Singapore - <a
-                        href="https://arxiv.org/pdf/2510.04792" target="_blank">Hybrid-Balance GFlowNet for Solving
-                        Vehicle Routing Problems</a></li>
-                <li>LinkedIn - <a
-                        href="https://www.linkedin.com/pulse/ai-lead-optimization-from-trial-and-error-first-try-eskici-ph-d--lpncc/"
-                        target="_blank">AI in lead optimization: From Trial-and-Error to First-Try Precision</a></li>
-                <li>Shoutout DFW - <a
-                        href="https://shoutoutdfw.com/meet-akshat-santhana-gopalan-ai-researcher-and-founder-of-beyondwords-ai/"
-                        target="_blank">AI Researcher and Founder of BeyondWords AI</a></li>
-                <li>Gaslighting Check - <a
-                        href="https://www.gaslightingcheck.com/blog/how-personalized-sentiment-analysis-supports-mental-health"
-                        target="_blank">How Personalized Sentiment Analysis Supports Mental Health</a></li>
-            </ul>
-        </section>
-        <section id="certifications">
-            <h2>Certifications & Courses</h2>
-            <ul class="bulleted">
-                <li>Google Certified TensorFlow Developer (ID: 86637261)</li>
-                <li>IBM - Python Basics for Data Science</li>
-                <li>Stanford University & DeepLearning.AI - Machine Learning Specialization</li>
-                <li>DeepLearning.AI - Google TensorFlow Developer Specialization</li>
-                <li>Google Generative AI Fundamentals – Responsible AI • LLMs • Generative AI</li>
-                <li>Microsoft Azure Cloud Computing Fundamentals AZ-900 (ID: 989975748)</li>
-                <li>University of Alberta – Reinforcement Learning</li>
-            </ul>
-        </section>
-        <section id="music">
-            <h2>Music</h2>
-            <div class="item">
-                <img src="assets/music.png" alt="Organization Logo">
+          </div>
 
-                <div>
-                    <h3>Professional Carnatic Flautist</h3>
-                    <p class="muted">
-                        Have been training for 11 years in Carnatic Classical Flute.
-                        Solo Concert Musician.
-                        Performed in multiple concerts.
-                        Performed for kids with special needs - Special Child Assistance Network (SCAN), Chennai, INDIA
-                        (2024)
-                        Selected as IndianRaga Fellow by MIT-founded startup IndianRaga (2025).
-                    </p>
-                </div>
+          <div class="award">
+            <span class="award-year">2024</span>
+            <div>
+              <p class="award-name">NASA App Development Challenge — National Finalist</p>
+              <p class="award-sub">App visualizing the Artemis II mission's real-time flight path and Earth communication links.</p>
             </div>
-        </section>
+          </div>
 
-        <section id="clubs">
-            <h2>Clubs & Leadership</h2>
-            <div class="item">
-                <div>
-                    <h3>Cyberhawks Computer Science and Machine Learning Club (2024 - Till Date)</h3>
-                    <p class="muted">
-                        Co-president/board of the club.
-                        Taught AI & ML topics to students part of the club on the weekly sessions.
-                    </p>
-                </div>
+          <div class="award">
+            <span class="award-year">2023</span>
+            <div>
+              <p class="award-name">Congressional App Challenge Award</p>
+              <p class="award-sub">BeyondWords AI: reading companion for individuals with dyslexia. Recognized by Congressman Frank Pallone Jr. <a href="https://pallone.house.gov/media/press-releases/pallone-recognizes-outstanding-high-school-students-spring-awards-ceremony-1" target="_blank" rel="noopener">↗</a></p>
             </div>
-            <div class="item">
-                <div>
-                    <h3>Astronomy Club (2025 - Till Date)</h3>
-                    <p class="muted">
-                        Co-president of the club.
-                        Lead astronomy sessions to students on the weekly gatherings.
-                    </p>
-                </div>
-            </div>
-            <div class="item">
-                <div>
-                    <h3>NASA Competition Team - Founder & Captain (2024, 2025)</h3>
-                    <p class="muted">
-                        Captained the school team for NASA STEM Challenges.
-                    </p>
-                </div>
-            </div>
-            <div class="item">
-                <div>
-                    <h3>Freshman Class President (2023)</h3>
-                    <p class="muted">
-                        Competed in school election.
-                        Elected as Class President during freshman year.
-                    </p>
-                </div>
-            </div>
-        </section>
-    </main>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- THOUGHTS -->
+      <div id="page-thoughts" class="page">
+        <div class="prose">
+          <p class="page-label">Fragments</p>
+          <p>
+            The most interesting problems don't announce themselves as such.
+          </p>
+          <p>
+            Research taught me that being wrong quickly is a feature, not a bug.
+          </p>
+          <p>
+            More here eventually.
+          </p>
+        </div>
+      </div>
+
+    </div><!-- .pages -->
 
     <footer>
-        © Akshat Santhana Gopalan · <span id="year"></span>
+      <div class="social-links">
+        <a href="https://github.com/AkshatSG" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://scholar.google.com/citations?user=a9Gvs_wAAAAJ&hl=en" target="_blank" rel="noopener">Scholar</a>
+        <a href="https://arxiv.org/abs/2602.00315" target="_blank" rel="noopener">arXiv</a>
+        <a href="mailto:asgchess12@gmail.com">Email</a>
+      </div>
+      <div class="footer-bottom">
+        <span class="signature">Akshat Gopalan</span>
+        <span class="clock" id="clock"></span>
+      </div>
     </footer>
 
-    <script src="script.js"></script>
-</body>
+  </div><!-- .right -->
 
+  <script src="script.js"></script>
+</body>
 </html>
